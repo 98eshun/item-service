@@ -14,6 +14,10 @@
     <div class="py-5 text-center">
         <h2>상품 상세</h2>
     </div>
+
+    <!-- 쿼리 파라미터는 param.~ 처럼 파라미터를 꺼내서 사용 가능 -->
+    <h2 th:if="${param.status}" th:text="'저장 완료'"></h2>
+
     <div>
         <label for="itemId">상품 ID</label>
         <input type="text" id="itemId" name="itemId" class="form-control"
